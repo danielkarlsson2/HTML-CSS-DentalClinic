@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #25e6c8 ;
+    --primary-color: #25E6C8 ;
     --secondary-color: #2baaec;
     
 }
@@ -32,6 +32,11 @@ h3 {
 p {
     color: #626262;
 }
+.btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 5px 2px #626262;
+}
+
 
 
 /* --------------Top Menu------------ */
@@ -73,6 +78,7 @@ p {
 }
 .nav-soc:hover {
     color: #25e6c8;
+    transform: scale(1.2);
 }
 
 /* -------------Main Menu------------------- */
@@ -97,6 +103,7 @@ p {
 .logo {
     /* height: 81px; */
     display: flex;
+    cursor: pointer;
 }
 .container2 ul{
     display: flex;  
@@ -110,9 +117,10 @@ p {
     padding: .8rem;
     font-size: 18px;
     color: black;
-    font-family: 'Roboto Slab', serif;
-    /* font-weight: 100; */
-    
+    font-family: 'Roboto Slab', serif;        
+}
+.nav-text:hover {
+    transform: scale(1.1);
 }
 
 /* ---------------Showcase-------------- */
@@ -212,8 +220,7 @@ p {
     justify-content: space-between;
 }
 #img-2 {
-    height: 700px;
-    
+    height: 700px;    
 }
 
 
@@ -244,7 +251,6 @@ p {
     align-items: center;
     border: none;
     border-radius: 10px;
-    font-family: ;
     cursor: pointer;
 }
 .card-head {
@@ -280,21 +286,16 @@ p {
     gap: 1rem;
 }
 
-#tooth {
-    /* color: black; */
-    /* border: 2px solid red; */
-    
-}
 
 /* -----------------Appointment---------- */
 .appointment {
-    background-color: var(--secondary-color);    
+    background-color: #2ba8ece1;    
     height: 220px;
     display: flex;  
-    justify-content: center;
-    /* border: 2px solid red; */
+    justify-content: center;      
     
 }
+    
 .appointment .container {
     width: 80%;
     display: flex;
@@ -308,7 +309,12 @@ p {
 .book {
     color: var(--secondary-color);
     font-weight: 700;
+    cursor: pointer;
 }
+/* .book:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 5px 2px #626262;
+} */
 
 /* ---------------------Footer------------ */
 .footer {
@@ -316,20 +322,14 @@ p {
     background-color: #2BAAEC;
     display: flex;
     justify-content: center;
+    
     /* border-top: 1px solid #FFF; */
 }
-.overlay {
-    /* position: fixed; */
-    opacity: 80%%;
+.footer .container {
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #dedede;
-    border: 2px solid red;
-    
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
 }
 .copywright p{
     color: white;
@@ -338,7 +338,7 @@ p {
 
 /* MEDIA */
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 576px) {
     #img-1 {
         display: none;
         /* navbar-link: */
@@ -350,8 +350,11 @@ p {
         width: 100%;        
     }
     .text-1 {
-        margin-left: 2rem;
-        
+        margin-left: 2rem;        
+    }
+    /* ------grid */
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
     }
     
 }
@@ -365,6 +368,9 @@ p {
     .container3 {
         width: 80%;
     }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -372,4 +378,8 @@ p {
     .text-1 {
         margin-left: 8rem;    
     }
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
 }
