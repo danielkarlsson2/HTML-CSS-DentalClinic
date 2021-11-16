@@ -243,8 +243,8 @@ p {
     /* justify-content: center; */
 }
 .card {
-    width: 450px;
-    height: 436px;
+    /* width: 400px; */
+    /* height: 386px; */
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -254,22 +254,24 @@ p {
     cursor: pointer;
 }
 .card-head {
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 .ball {
     background-color: var(--primary-color);
     height: 120px;
     width: 120px;
     border-radius: 50%;
-    position: relative;
-    margin-top: 4rem;
+    /* position: relative; */
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .center {    
     text-align: center;
-    width: 60%;
+    width: 70%;
+    margin-bottom: 3rem;
 }
 .card:hover .ball{
     background-color: var(--secondary-color);
@@ -279,8 +281,9 @@ p {
     transform: scale(1.02);
 }
 .grid {
+    width: 80%;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -337,11 +340,11 @@ p {
 
 
 /* MEDIA */
-
-@media screen and (min-width: 576px) {
+/* 
+@media screen and (min-width: 300px) {
     #img-1 {
         display: none;
-        /* navbar-link: */
+        navbar-link:
     }
     .logo {
         display: none;
@@ -353,11 +356,29 @@ p {
         margin-left: 2rem;        
     }
     /* ------grid */
+    
+/*     
+@media screen and (min-width: 576px) {
+    #img-1 {
+        display: none;
+        navbar-link:
+    }
+    .logo {
+        display: none;
+    }
+    .container3 {
+        width: 100%;        
+    }
+    .text-1 {
+        margin-left: 2rem;        
+    }
+    
     .grid {
         grid-template-columns: repeat(1, 1fr);
     }
     
-}
+} */
+/* 
 @media screen and (min-width: 768px) {
     #img-1 {
         display: inline-block;
@@ -367,19 +388,26 @@ p {
     }
     .container3 {
         width: 80%;
+        
+    }
+    #img-1 {
+        display: none;
     }
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
+} */
+/* 
 @media screen and (min-width: 1200px) {
  
     .text-1 {
         margin-left: 8rem;    
     }
+    #img-1 {
+        display: flex;
+    }
     .grid {
         grid-template-columns: repeat(3, 1fr);
     }
     
-}
+} */
