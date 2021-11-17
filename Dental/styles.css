@@ -34,7 +34,7 @@ p {
 }
 .btn:hover {
     transform: scale(1.03);
-    box-shadow: 0px 0px 5px 2px #626262;
+    /* box-shadow: 0px 0px 5px 2px #626262; */
 }
 
 
@@ -159,8 +159,10 @@ p {
     padding: 1rem 3rem;
     border-radius: 10px;
     border: none;
-    margin-top: 2rem;
-    
+    margin-top: 2rem;    
+}
+.btn-clinic:hover {
+    background-color: #2BAAEC;
 }
 .btn-primary {
     background-color: var(--primary-color);
@@ -168,7 +170,7 @@ p {
 }
 
 .text-1 {
-    margin-left: 8rem;    
+    margin-left: 8rem;        
     /* border: 1px solid green; */
 }
 
@@ -195,7 +197,8 @@ p {
     /* padding-right: 3rem; */
 }
 .head {
-    width: 60%;
+    width: 100%;
+    font-size: 1.5rem;
     /* border: 2px solid blue; */
 }
 
@@ -229,8 +232,8 @@ p {
     background-color: #f7f7f7;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center; 
+    /* justify-content: center; */
     
 }
 .services-head {
@@ -241,10 +244,15 @@ p {
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
+    /* gap: 1rem; */
+}
+.services-head h2 {
+    font-size: 40px;
+    font-weight: 100;
 }
 .card {
-    /* width: 400px; */
-    /* height: 386px; */
+    width: 400px;
+    height: 386px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -271,22 +279,25 @@ p {
 .center {    
     text-align: center;
     width: 70%;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
 .card:hover .ball{
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color);    
+    outline: 8px solid #2ba8ec54;
+    transition: 400ms;   
+    
 }
 .card:hover {
     box-shadow: 0px 0px 10px 0px #626262;  
     transform: scale(1.02);
 }
 .grid {
-    width: 80%;
+    width: 75%;
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem; 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 
@@ -300,7 +311,7 @@ p {
 }
     
 .appointment .container {
-    width: 80%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -314,10 +325,13 @@ p {
     font-weight: 700;
     cursor: pointer;
 }
-/* .book:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 0px 5px 2px #626262;
-} */
+.book:hover {
+    /* transform: scale(1.03); */
+    /* box-shadow: 0px 0px 5px 2px #626262; */
+    background-color: #2BAAEC;
+    border: 1px solid white;
+    color: white;
+}
 
 /* ---------------------Footer------------ */
 .footer {
@@ -335,7 +349,7 @@ p {
     /* border: 2px solid red; */
 }
 .copywright p{
-    color: white;
+    color: rgba(255, 255, 255, 0.365);
 }
 
 
