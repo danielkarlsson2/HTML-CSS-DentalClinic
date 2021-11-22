@@ -1,9 +1,4 @@
 
-@media screen and (max-width: 300px) {
-    
-    
-    
-}
 @media screen and (max-width: 576px) {
     .grid {
         grid-template-columns: repeat(1, 1fr);
@@ -38,5 +33,9 @@
     #img-1, #img-2 {
         display: none;
     }    
+    
+}
+
+@media screen and (min-width: 1200px) {
     
 }
