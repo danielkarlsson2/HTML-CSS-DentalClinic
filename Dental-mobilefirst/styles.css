@@ -40,6 +40,18 @@ p {
 
 
 /* --------------Top Menu------------ */
+.logo-mobile {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-top {
+    height: 2.5rem;
+    margin-top: 2rem;    
+    
+}
+
 .top-menu {
     width: 100%;
     height: 60px;
@@ -69,26 +81,67 @@ p {
     list-style-type: none;
     display: flex;
 }
-.far, .social-media a{
+.far, .nav-soc, .social-media-mobile a{
     color: var(--secondary-color);
 }
 .nav-soc {
     padding: .6rem;
+    
 }
 .nav-soc:hover {
     color: #25e6c8;
     transform: scale(1.2);
 }
 
+
+
+
+
+
+/* ----------SOCIAL MEDIA - MOBILE---------- */
+.social-media-container {
+    background-color: #dedede;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid blue; */    
+    /* border-top: 1px solid #dedede; ; */
+    position: sticky ;
+    bottom: 0%;
+    
+}
+.social-media-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-mobile ul {
+    width: 80%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    /* border: 1px solid blue;  */
+}
+
+
+
+
+
+
 /* --------------Main Menu------------ */
 
 .top-nav {
-    margin-top: 2rem;
+    margin-top: .9rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     /* border: 1px solid blue; */
+    position: sticky;
+    
         
 }
 .container2 {
@@ -120,9 +173,17 @@ p {
     color: black;
     font-family: 'Roboto Slab', serif;        
 }
+.nav-text {
+    /* border-bottom: 1px solid #DEDEDE; */
+}
 .nav-text:hover {
     transform: scale(1.1);
 }
+
+
+
+
+
 
 
 
@@ -137,7 +198,7 @@ p {
 .showcase {
     width: 100%;
     background-color: #DEDEDE;
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     /* border: 1px solid green; */
@@ -192,6 +253,10 @@ p {
 
 
 
+
+
+
+
 /* --------------About Us------------ */
 .about {
     width: 100%;    
@@ -217,14 +282,16 @@ p {
 }
 .head {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1rem;    
     /* border: 2px solid blue; */
 }
 
 .line {
-    border: 2px solid var(--primary-color);;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
     margin: 2rem 0;   
     width: 100%;
+    /* height: 3px; */
 }
 .about span {    
     color: var(--secondary-color);
@@ -238,12 +305,19 @@ p {
 .results {
     width: 80%;
     display: flex;
-    
+    align-items: center;
     justify-content: space-between;
 }
 #img-2 {
     height: 700px;    
 }
+
+
+
+
+
+
+
 
 /* --------------Services------------ */
 .services {
@@ -255,7 +329,7 @@ p {
     
 }
 .services-head {
-    width: 20%;
+    width: 25%;
     margin-top: 2rem;
     /* border: 1px solid gray; */
     display: flex;
@@ -268,6 +342,12 @@ p {
 .services-head h2 {
     font-size: 40px;
     font-weight: 100;
+}
+.line-long {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    margin: 2rem 0;   
+    width: 100%;
 }
 .card {
     width: 20rem;
@@ -285,8 +365,8 @@ p {
 }
 .ball {
     background-color: var(--primary-color);
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     /* position: relative; */
     margin-top: 1.5rem;
@@ -297,7 +377,7 @@ p {
 }
 .center {    
     text-align: center;
-    width: 70%;    
+    width: 75%;    
 }
 .card:hover .ball{
     background-color: var(--secondary-color);    
@@ -319,6 +399,14 @@ p {
     grid-template-columns: repeat(1);
     gap: 1rem;
 }
+
+
+
+
+
+
+
+
 /* --------------Appointment------------ */
 .appointment {
     background-color: #2ba8ece1;    
@@ -352,6 +440,14 @@ p {
     border: 1px solid white;
     color: white;
 }
+
+
+
+
+
+
+
+
 /* --------------Footer------------ */
 .footer {
     height: 2rem;
@@ -374,6 +470,14 @@ p {
 
 
 
+
+
+
+
+
+
+
+
 /* ------MEDIA QUERIES----- */
 
 @media (min-width: 300px) {
@@ -381,7 +485,8 @@ p {
         display: none;
     }
     .container2 {                
-        border-bottom: 0.8px solid #dedede;         
+        /* border-bottom: 0.8px solid #dedede;          */
+        
     }
     .logo {
         display: none;
@@ -390,6 +495,7 @@ p {
         margin: .5rem;
     }    
     /* showcase */
+    
     #img-1, #img-2{
         display: none;
     }
@@ -406,6 +512,9 @@ p {
     
 }
 @media (min-width: 768px) {
+    .logo-mobile {
+        display: none;
+    }
     .nav-text {
         margin: .5rem;
     }   
@@ -469,6 +578,10 @@ p {
         flex-direction: row;
         justify-content: space-between;
     }
+    /* SOCIAL MEDIA */
+    .social-media-container {
+        display: none;
+    }
     
 }
 @media (min-width: 992px) {
@@ -509,11 +622,25 @@ p {
 
 @media (min-width: 1200px) {
     #img-1, #img-2 {
-        height: 600px;
+        height: 450px;
     }
     
+    /* MAIN MENU */
+    .logo {
+        height: ;
+        margin-top: 1rem;        
+    }
+    .container2 {
+        width: 80%;
+    }
 
     /* Showcase */
+    .showcase {
+        margin-top: 1rem;
+    }
+    .container3 {
+        width: 80%;
+    }
     .showcase h1 {    
         font-size: 60px;
     }
@@ -521,7 +648,7 @@ p {
         font-family: 'Roboto', serif;
         font-size: 18px;
         font-weight: 300;
-        padding: 2rem 0;
+        padding: .3rem 0;
         line-height: 1.6rem;
     }
 
@@ -530,7 +657,7 @@ p {
     }
     /* ABOUT US */
     .container-4 {
-
+        width: 80%;
     }
 }
 }
