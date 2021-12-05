@@ -198,7 +198,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;    
+    width: 90%;    
 }
 .btn {
     padding: 1rem 3rem;
@@ -539,6 +539,9 @@ p {
 
     /* ----showcase--- */
        
+    .container3 {
+        width: 80%;
+    }
     #img-2 {
         height: 450px;
     }
@@ -591,7 +594,7 @@ p {
         width: 80%;
     }
     .showcase h1 {    
-        font-size: 60px;
+        font-size: 50px;
     }
     .showcase p {
         font-family: 'Roboto', serif;
