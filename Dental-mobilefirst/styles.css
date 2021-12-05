@@ -173,14 +173,9 @@ p {
     color: black;
     font-family: 'Roboto Slab', serif;        
 }
-.nav-text {
-    /* border-bottom: 1px solid #DEDEDE; */
-}
 .nav-text:hover {
     transform: scale(1.1);
 }
-
-
 
 
 
@@ -235,6 +230,7 @@ p {
 }
 .btn-clinic:hover {
     background-color: #2BAAEC;
+    cursor: pointer;
 }
 .btn-primary {
     background-color: var(--primary-color);
@@ -275,11 +271,6 @@ p {
     text-align: center;
     /* justify-content: space-between; */
 }
-.info {
-    /* width: 60%; */
-    /* border: 1px solid green; */
-    /* padding-right: 3rem; */
-}
 .head {
     width: 100%;
     font-size: 1rem;    
@@ -303,7 +294,7 @@ p {
     color: var(--secondary-color);
 }
 .results {
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -483,11 +474,7 @@ p {
 @media (min-width: 300px) {
     .top-menu {
         display: none;
-    }
-    .container2 {                
-        /* border-bottom: 0.8px solid #dedede;          */
-        
-    }
+    }    
     .logo {
         display: none;
     }
@@ -547,9 +534,6 @@ p {
         /* border: 1px solid green; */
         padding-right: 3rem;
     }
-    .container-4 {
-        width: 80%;
-    }
     .showcase {
         justify-content: center;
     }
@@ -558,13 +542,19 @@ p {
     }
     .showcase p {
         text-align: start;
+        margin-bottom: 1rem;
     }
     .text-1 {
         justify-content: start;
         align-items: flex-start;
     }
+    .btn-clinic {
+        margin: 0;       
+        
+    }
     /* About Us */
     .container-4 {
+        width: 80%;
         text-align: start;
     }
     /* SERVICES */
@@ -589,13 +579,6 @@ p {
 
     /* ----showcase--- */
        
-    .showcase {
-        /* width: 100%; */
-        /* justify-content: center; */
-    }
-            
-    
-    /*  */
     .text-1 {
         width: 70%;
         align-items: flex-start;
@@ -606,6 +589,9 @@ p {
     }
     /* ABOUT US */
     .container-4 {
+        width: 80%;
+    }
+    .results {
         width: 80%;
     }
     /* SERVICES */
@@ -621,13 +607,16 @@ p {
 
 
 @media (min-width: 1200px) {
-    #img-1, #img-2 {
+    #img-1 {
+        height: 450px;
+    }
+    #img-2 {
         height: 450px;
     }
     
     /* MAIN MENU */
-    .logo {
-        height: ;
+
+    .logo {        
         margin-top: 1rem;        
     }
     .container2 {
@@ -653,7 +642,8 @@ p {
     }
 
     .grid {
-        grid-template-columns: repeat(3, 1fr);
+        
+        grid-template-columns: repeat(3, 1fr);        
     }
     /* ABOUT US */
     .container-4 {
