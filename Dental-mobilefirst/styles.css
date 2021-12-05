@@ -456,9 +456,6 @@ p {
     /* About us */
 }
 
-@media (min-width: 576px) {
-    
-}
 @media (min-width: 768px) {
     .logo-mobile {
         display: none;
