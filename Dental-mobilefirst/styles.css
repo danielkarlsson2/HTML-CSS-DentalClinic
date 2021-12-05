@@ -270,7 +270,7 @@ p {
     justify-content: space-between;
 }
 #img-2 {
-    height: 700px;    
+    height: 700px;        
 }
 
 
@@ -488,7 +488,7 @@ p {
     /* About us */
     #img-2 {
         display: flex;
-        height: 300px;
+        height: 400px;        
     }
     .info {
         width: 60%;        
@@ -539,6 +539,9 @@ p {
 
     /* ----showcase--- */
        
+    #img-2 {
+        height: 450px;
+    }
     .text-1 {
         width: 70%;
         align-items: flex-start;
@@ -566,12 +569,10 @@ p {
 
 
 @media (min-width: 1200px) {
-    #img-1 {
+    #img-1, #img-2 {
         height: 450px;
     }
-    #img-2 {
-        height: 450px;
-    }
+    
     
     /* MAIN MENU */
 
